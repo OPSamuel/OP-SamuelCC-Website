@@ -1,0 +1,285 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Samuel</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    <link rel="stylesheet" href="static/css/background.css">
+    <link rel="stylesheet" href="static/css/index.css">
+    <link rel="stylesheet" href="static/css/loadingAnimation.css">
+    <link rel="icon" href="static/img/logo.png" type="image/png">
+</head>
+<body>
+    <div class="logo-splash">
+        <div class="logo-container">
+            <img src="static/img/logo.png" alt="Samuel Logo" class="intro-logo">
+            <div class="logo-particles"></div>
+        </div>
+    </div>
+
+    <canvas id="canvas"></canvas>
+    
+    <div class="container">
+        <header class="header">
+            <div class="header-content">
+                <h1 class="title"><span class="highlight">OP</span> Samuel<span class="highlight">CC</span></h1>
+                <h2 class="subtitle">Full Stack Developer</h2>
+                <div class="social-links">
+                    <a href="https://github.com/OPSamuel" 
+                    target="_blank" 
+                    class="github-link"
+                    onclick="return handleGithubClick(event)">
+                        <i class="fab fa-github"></i>
+                        <span class="tooltip">Visit my GitHub</span>
+                    </a>
+                    <a href="https://discord.com/users/574217755692236803" 
+                       target="_blank" 
+                       class="discord-link"
+                       onclick="return handleDiscordClick(event)">
+                        <i class="fab fa-discord"></i>
+                        <span class="tooltip">Add me on Discord</span>
+                    </a>
+                </div>
+            </div>
+        </header>
+
+        <main class="content">
+            <section class="card about">
+                <div class="section-header">
+                    <i class="fas fa-user"></i>
+                    <h2>About Me</h2>
+                </div>
+                <p class="intro-text">Self-taught developer passionate about building functional and elegant solutions. I specialize in Discord bots, web development, and Python automation.</p>
+                
+                <div class="about-grid">
+                    <div class="about-item">
+                        <i class="fas fa-laptop-code"></i>
+                        <div>
+                            <h3>Focus</h3>
+                            <p>Discord Bots, Web Apps, Python Scripts</p>
+                        </div>
+                    </div>
+                    <div class="about-item">
+                        <i class="fas fa-graduation-cap"></i>
+                        <div>
+                            <h3>Learning</h3>
+                            <p>Advanced Python, React, System Design</p>
+                        </div>
+                    </div>
+                    <div class="about-item">
+                        <i class="fas fa-code"></i>
+                        <div>
+                            <h3>Languages</h3>
+                            <p>JavaScript, Python, HTML/CSS</p>
+                        </div>
+                    </div>
+                    <div class="about-item">
+                        <i class="fas fa-rocket"></i>
+                        <div>
+                            <h3>Approach</h3>
+                            <p>I learn by building applications</p>
+                        </div>
+                    </div>
+                </div>
+            </section>
+
+            <section class="card skills">
+                <div class="section-header">
+                    <i class="fas fa-layer-group"></i>
+                    <h2>Skills & Tools</h2>
+                </div>
+                
+                <div class="skills-categories">
+                    <div class="category">
+                        <h3>Languages</h3>
+                        <div class="skill-badges">
+                            <span class="skill-badge badge-js">
+                                <i class="fab fa-js"></i> JavaScript
+                            </span>
+                            <span class="skill-badge badge-html">
+                                <i class="fab fa-html5"></i> HTML5
+                            </span>
+                            <span class="skill-badge badge-css">
+                                <i class="fab fa-css3-alt"></i> CSS3
+                            </span>
+                            <span class="skill-badge badge-python">
+                                <i class="fab fa-python"></i> Python
+                            </span>
+                        </div>
+                    </div>
+                    
+                    <div class="category">
+                        <h3>Frameworks & Libraries</h3>
+                        <div class="skill-badges">
+                            <span class="skill-badge badge-discordjs">
+                                <i class="fab fa-discord"></i> Discord.js
+                            </span>
+                            <span class="skill-badge badge-node">
+                                <i class="fab fa-node-js"></i> Node.js
+                            </span>
+                        </div>
+                    </div>
+                    
+                    <div class="category">
+                        <h3>Tools & Platforms</h3>
+                        <div class="skill-badges">
+                            <span class="skill-badge badge-git">
+                                <i class="fab fa-git-alt"></i> Git
+                            </span>
+                            <span class="skill-badge badge-github">
+                                <i class="fab fa-github"></i> GitHub
+                            </span>
+                            <span class="skill-badge badge-vscode">
+                                <i class="fas fa-code"></i> VS Code
+                            </span>
+                        </div>
+                    </div>
+                </div>
+                
+                <p class="skills-footer">I'm constantly expanding my skill set through personal projects and continuous learning.</p>
+            </section>
+
+            <section class="card projects">
+                <div class="section-header">
+                    <i class="fas fa-project-diagram"></i>
+                    <h2>Featured Projects</h2>
+                </div>
+                
+                <div class="project-cards">
+                    <div class="project-card">
+                        <div class="project-header">
+                            <h3>Fortnite Maps Bot</h3>
+                            <div class="project-links">
+                                <a href="https://github.com/OPSamuel/Fortnite-Maps" target="_blank">
+                                    <i class="fab fa-github"></i>
+                                </a>
+                            </div>
+                        </div>
+                        <p>Discord bot that fetches Fortnite map versions with slash commands and an interactive menus.</p>
+                        <div class="project-tech">
+                            <span>Discord.js</span>
+                            <span>Node.js</span>
+                            <span>API Integration</span>
+                        </div>
+                    </div>
+                    
+                    <div class="project-card">
+                        <div class="project-header">
+                            <h3>Offline Notifier</h3>
+                            <div class="project-links">
+                                <a href="https://github.com/OPSamuel/Offline-Notifier" target="_blank">
+                                    <i class="fab fa-github"></i>
+                                </a>
+                            </div>
+                        </div>
+                        <p>Automated system that sends notifications when specific Discord users go offline.</p>
+                        <div class="project-tech">
+                            <span>Discord.js</span>
+                            <span>Webhooks</span>
+                            <span>Cron Jobs</span>
+                        </div>
+                    </div>
+                    
+                    <div class="project-card">
+                        <div class="project-header">
+                            <h3>Python Quiz App</h3>
+                            <div class="project-links">
+                                <a href="https://github.com/OPSamuel/Python-Quiz" target="_blank">
+                                    <i class="fab fa-github"></i>
+                                </a>
+                            </div>
+                        </div>
+                        <p>Terminal-based quiz application with score tracking and multiple question formats.</p>
+                        <div class="project-tech">
+                            <span>Python</span>
+                            <span>CLI</span>
+                            <span>JSON</span>
+                        </div>
+                    </div>
+                </div>
+            </section>
+
+            <section class="card contact">
+                <div class="section-header">
+                    <i class="fas fa-paper-plane"></i>
+                    <h2>Get in Touch</h2>
+                </div>
+                
+                <div class="contact-container">
+                    <div class="contact-message">
+                        <p>Want to collaborate on a project, discuss opportunities, or just say hello? I'd love to hear from you!</p>
+                    </div>
+                    
+                    <div class="contact-details">
+                        <div class="contact-platform discord">
+                            <div class="platform-header">
+                                <i class="fab fa-discord"></i>
+                                <h3>Discord</h3>
+                            </div>
+                            <div class="platform-info">
+                                <div class="info-item">
+                                    <span>Username</span>
+                                    <div class="info-content">
+                                        <div class="info-value">
+                                            <code>opsamuelcc</code>
+                                        </div>
+                                        <button class="copy-btn" onclick="copyToClipboard('opsamuelcc', this)">
+                                            <i class="far fa-copy"></i>
+                                        </button>
+                                    </div>
+                                </div>
+                                <div class="info-item">
+                                    <span>User ID</span>
+                                    <div class="info-content">
+                                        <div class="info-value">
+                                            <code>574217755692236803</code>
+                                        </div>
+                                        <button class="copy-btn" onclick="copyToClipboard('574217755692236803', this)">
+                                            <i class="far fa-copy"></i>
+                                        </button>
+                                    </div>
+                                </div>
+                                <a href="https://discord.com/users/574217755692236803" target="_blank" class="platform-btn">
+                                    <i class="fab fa-discord"></i> Message Me
+                                </a>
+                            </div>
+                        </div>
+                        
+                        <div class="contact-platform github">
+                            <div class="platform-header">
+                                <i class="fab fa-github"></i>
+                                <h3>GitHub</h3>
+                            </div>
+                            <div class="platform-info">
+                                <div class="info-item">
+                                    <span>Profile</span>
+                                    <div class="info-value">
+                                        <code>OPSamuel</code>
+                                    </div>
+                                </div>
+                                <a href="https://github.com/OPSamuel" target="_blank" class="platform-btn">
+                                    <i class="fab fa-github"></i> View Projects
+                                </a>
+                            </div>
+                        </div>
+                    </div>
+                    
+                    <div class="contact-closing">
+                        <p>Thanks for visiting! Let's create something amazing together.</p>
+                        <div class="signature">Made By Samuel</div>
+                    </div>
+                </div>
+            </section>
+        </main>
+    </div>
+
+    <script src="static/js/loadingAnimation.js"></script>
+    <script src="static/js/scrollAnimations.js"></script>
+    <script src="static/js/background.js"></script>
+    <script src="static/js/loadingStats.js"></script>
+    <script src="static/js/profileLinks.js"></script>
+    <script src="static/js/contact.js"></script>
+    <script src="https://unpkg.com/scrollreveal@4.0.9/dist/scrollreveal.min.js"></script>
+</body>
+</html>
